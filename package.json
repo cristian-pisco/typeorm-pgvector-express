@@ -1,0 +1,40 @@
+{
+  "name": "typeorm-pgvector-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "lint": "eslint --ignore-path .gitignore . --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest --verbose",
+    "generate-data": "ts-node scripts/seed-data.ts"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "express": "^5.1.0",
+    "fastembed": "^1.14.4",
+    "pg": "^8.14.1",
+    "pgvector": "^0.2.0",
+    "reflect-metadata": "^0.2.2",
+    "tunnel-ssh": "^5.2.0",
+    "typeorm": "^0.3.22"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "dotenv": "^16.4.7",
+    "eslint": "^8.57.1",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
